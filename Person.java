@@ -7,6 +7,9 @@ public class Person {
     Person(String paramName, String paramAddress){
         name = paramName;
         address = paramAddress;
+
+        //untuk mengatasi variable shadowing, ketika nama parameter sama dengan nama field
+        this.name = paramName;
     }
 
     void sayHello(String paramName) {
