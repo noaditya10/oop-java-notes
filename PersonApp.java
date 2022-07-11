@@ -6,8 +6,8 @@ public class PersonApp {
         System.out.println(person1.name);
         person1.sayHello("Farhan");
 
-        var vicePresident = new VicePresident();
-        vicePresident.name = "Novi";
+        var vicePresident = new VicePresident("Satya");
+        System.out.println(vicePresident.name);
         vicePresident.sayHello("Aditya");
 
 
