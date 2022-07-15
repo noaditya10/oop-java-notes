@@ -17,5 +17,18 @@ public class PolymorphismApp {
 
         //polymorphism tidak bisa mengakses method child classnya
 
+        sayHello(new Employee("Farhan Employee"));
+        sayHello(new Manager("Wahyu Manager"));
+        sayHello(new VicePresident("Pratama VP"));
     }
+
+    //contoh aplikasi polymorphism :
+    //parameter dalam method berbentuk object Employee, tetapi ketika dipanggil bisa berubah
+    //bentuk ke Manager atau VicePresident
+    //hal ini akan membuat kode lebih efektif
+    static void sayHello(Employee employee) {
+        System.out.println("Hello " + employee.name);
+    }
+
+
 }
