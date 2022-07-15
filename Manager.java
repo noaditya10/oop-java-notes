@@ -1,19 +1,17 @@
-public class Manager {
-
-    String name;
+public class Manager extends Employee{
 
     String company;
 
     Manager(String name){
-        this.name = name;
+        super(name);
     }
 
     Manager(String name, String company){
-        this.name = name;
+        super(name);
         this.company = name;
     }
 
     void sayHello(String name) {
-        System.out.println("Hi " + name);
+        System.out.println("Hi " +name + ", my name is Manager " + this.name);
     }
 }

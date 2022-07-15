@@ -8,7 +8,7 @@ public class VicePresident extends Manager{
     //maka child tidak wajib mengaksesnya
 
     void sayHello(String name) {
-        System.out.println("I am VP, " + name);
+        System.out.println("Hi " +name + ", my name is VP " + this.name);
     }
     //method overriding: nama, return, dan param harus sama
 }
